@@ -15,8 +15,8 @@
         <span class="openMsg"> Distance Converter</span>
         <div class="converter">
             <div id="field1">
-                <input type="text">
-                <select id="measureValue1" name="measurement">
+                <input id="input1" type="text" oninput="convertSelection(this.id, this.value)">
+                <select id="measureValue1" name="measurement" onchange="convertSelection(this.id, this.value)">
                     <option value="ft" selected>Feet</option>
                     <option value="mi">Mile</option>
                     <option value="m">Meter</option>
@@ -25,8 +25,8 @@
             </div>
             <span>=</span>
             <div id="field2">
-                <input type="text">
-                <select id="measureValue2" name="measurement">
+                <input id="input2" type="text" oninput="convertSelection(this.id, this.value)">
+                <select id="measureValue2" name="measurement" onchange="convertSelection(this.id, this.value)">
                     <option value="ft" selected>Feet</option>
                     <option value="mi">Mile</option>
                     <option value="m">Meter</option>
